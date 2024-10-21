@@ -56,4 +56,4 @@ npm run dev
 
 ## Ссылка на проект:
 
-- [Проект на Vercel](https://krutopognali-react-todos.vercel.app/)
+- [Проект на Vercel](https://react-todos-navy-tau.vercel.app/)
