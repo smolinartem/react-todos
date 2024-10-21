@@ -3,6 +3,38 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: 'FiraCode';
+    src: url('./fonts/FiraCode-Light.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'FiraCode';
+    src: url('./fonts/FiraCode-Regular.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'FiraCode';
+    src: url('./fonts/FiraCode-Medium.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'FiraCode';
+    src: url('./fonts/FiraCode-SemiBold.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -23,7 +55,7 @@
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 142.1 76.2% 36.3%;
-    --radius: 0rem;
+    --radius: 0.5rem;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -64,6 +96,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-main;
   }
 }
